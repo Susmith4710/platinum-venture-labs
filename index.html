@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platinum Venture Labs | Incubating the Future</title>
+    <meta name="description" content="Platinum Venture Labs incubates breakthrough ventures in AI, neuromorphic computing, cybersecurity, and autonomous systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">&#9670;</span>
+                <span class="logo-text">PVL</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#heritage" class="nav-link">Heritage</a>
+                <a href="#focus" class="nav-link">Focus</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#stats" class="nav-link">Impact</a>
+                <a href="#contact" class="nav-link nav-link-cta">Connect</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas id="neuralCanvas"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                A Platinum Capital Partners Company
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Platinum</span>
+                <span class="title-line title-accent">Venture Labs</span>
+            </h1>
+            <p class="hero-tagline" id="typewriter"></p>
+            <div class="hero-cta">
+                <a href="#focus" class="btn btn-primary">
+                    <span>Explore Our Focus</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+                </a>
+                <a href="#portfolio" class="btn btn-ghost">
+                    <span>View Portfolio</span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+        <div class="hero-grid-overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">// ABOUT</span>
+                <h2 class="section-title">Incubating the <span class="text-gradient">Future</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-main" data-reveal>
+                    <p class="about-lead">Platinum Venture Labs was created to incubate and accelerate breakthrough ideas from the next generation of entrepreneurs. We identify, support, and invest in high-potential ventures led by exceptional early-stage founders.</p>
+                    <p class="about-secondary">Backed by the Poyiadjis Family Trust and extending the two-decade legacy of Platinum Capital Partners, PVL provides more than just capital. We embed ourselves alongside founders&mdash;providing strategic direction, operational expertise, and direct introductions to the family offices, institutional investors, and industry leaders who co-invest with us. Our model is built on conviction: fewer bets, deeper partnerships, and a long-term commitment to building companies that matter.</p>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card" data-reveal data-delay="0">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="20" cy="20" r="15"/>
+                                <path d="M20 5v30M5 20h30M8.8 8.8l22.4 22.4M31.2 8.8L8.8 31.2"/>
+                            </svg>
+                        </div>
+                        <h3>Strategic Guidance</h3>
+                        <p>Hands-on mentorship and strategic direction from seasoned investors with 20+ years of cross-sector experience.</p>
+                    </div>
+                    <div class="about-card" data-reveal data-delay="1">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="5" y="5" width="30" height="30" rx="3"/>
+                                <path d="M5 15h30M15 5v30"/>
+                                <circle cx="27" cy="27" r="5"/>
+                            </svg>
+                        </div>
+                        <h3>Growth Capital</h3>
+                        <p>Flexible capital deployment tailored to each venture's stage and trajectory, from seed to scale.</p>
+                    </div>
+                    <div class="about-card" data-reveal data-delay="2">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="20" cy="10" r="5"/>
+                                <circle cx="10" cy="30" r="5"/>
+                                <circle cx="30" cy="30" r="5"/>
+                                <line x1="20" y1="15" x2="10" y2="25"/>
+                                <line x1="20" y1="15" x2="30" y2="25"/>
+                                <line x1="15" y1="30" x2="25" y2="30"/>
+                            </svg>
+                        </div>
+                        <h3>Network Access</h3>
+                        <p>Direct access to family offices, institutional investors, and industry leaders across technology, energy, and defense.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Approach -->
+            <div class="approach" data-reveal>
+                <h3 class="approach-title">Our Approach</h3>
+                <div class="approach-steps">
+                    <div class="approach-step">
+                        <span class="approach-num">01</span>
+                        <h4>Identify</h4>
+                        <p>We source exceptional founders working on frontier problems in AI, cybersecurity, and autonomous systems&mdash;filtering for technical depth, market timing, and founder conviction.</p>
+                    </div>
+                    <div class="approach-connector"></div>
+                    <div class="approach-step">
+                        <span class="approach-num">02</span>
+                        <h4>Invest</h4>
+                        <p>We deploy flexible, founder-friendly capital structured to match the venture's stage. Our deals range from pre-seed to growth equity, often co-investing with institutional partners.</p>
+                    </div>
+                    <div class="approach-connector"></div>
+                    <div class="approach-step">
+                        <span class="approach-num">03</span>
+                        <h4>Accelerate</h4>
+                        <p>We go beyond the term sheet. Our team embeds alongside founders to provide operational playbooks, technical advisory, and direct introductions to customers and partners.</p>
+                    </div>
+                    <div class="approach-connector"></div>
+                    <div class="approach-step">
+                        <span class="approach-num">04</span>
+                        <h4>Scale</h4>
+                        <p>We leverage the Platinum Capital Partners network&mdash;spanning family offices, sovereign funds, and global operators&mdash;to help portfolio companies reach international scale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage / Parent Company Section -->
+    <section class="section heritage" id="heritage">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">// OUR HERITAGE</span>
+                <h2 class="section-title">Built on Two Decades of <span class="text-gradient">Proven Investment</span></h2>
+            </div>
+            <div class="heritage-intro" data-reveal>
+                <p class="heritage-lead">Platinum Venture Labs is a subsidiary of <strong>Platinum Capital Partners Inc. (PCP)</strong>, a holding company for the Poyiadjis Family Trust founded in 2005 by <strong>Roys Poyiadjis</strong>. Over the last 20 years, PCP has completed approximately <strong>65 investment transactions</strong> across technology, energy infrastructure, real estate, private equity, and special situations&mdash;co-investing alongside family offices, institutional investors, and global industry leaders.</p>
+                <p class="heritage-sub">PVL extends this legacy into frontier technology, channeling two decades of cross-sector deal-making experience into backing the next generation of founders.</p>
+            </div>
+
+            <div class="heritage-grid">
+                <div class="heritage-card" data-reveal>
+                    <div class="heritage-card-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="8" width="24" height="18" rx="2"/><path d="M4 14h24"/><circle cx="10" cy="20" r="2"/></svg>
+                    </div>
+                    <div class="heritage-card-body">
+                        <span class="heritage-sector">AI &amp; Surveillance</span>
+                        <h4>Airship AI Holdings <span class="heritage-ticker">NASDAQ: AISP</span></h4>
+                        <p>Provided bridge financing for this AI-driven video and sensor surveillance platform. Airship went public on NASDAQ via reverse merger in Dec 2023. Platinum converted its senior secured convertible debenture to equity and fully exited by Dec 2024.</p>
+                    </div>
+                </div>
+
+                <div class="heritage-card" data-reveal>
+                    <div class="heritage-card-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="16" cy="16" r="12"/><path d="M16 4v24M4 16h24"/><path d="M7 7l18 18M25 7L7 25"/></svg>
+                    </div>
+                    <div class="heritage-card-body">
+                        <span class="heritage-sector">Energy Storage &amp; Deep Tech</span>
+                        <h4>Nucleus Scientific / Indigo Technologies <span class="heritage-ticker">Co-founded with MIT</span></h4>
+                        <p>Platinum co-founded this Boston-based energy storage startup in 2007 with MIT Professor Ian Hunter. Assembled prominent VC co-investors. In 2015, Peter Thiel's $3B Founders Fund and Mark Heising acquired Platinum's stake.</p>
+                    </div>
+                </div>
+
+                <div class="heritage-card" data-reveal>
+                    <div class="heritage-card-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 4c-4 4-8 8-8 14a8 8 0 0016 0c0-6-4-10-8-14z"/><circle cx="16" cy="20" r="3"/></svg>
+                    </div>
+                    <div class="heritage-card-body">
+                        <span class="heritage-sector">Neuroscience &amp; MedTech</span>
+                        <h4>NYU Neuroscience Ventures <span class="heritage-ticker">NYU Dept. of Neuroscience &amp; Physiology</span></h4>
+                        <p>Collaborated with NYU to spin off patents into startups commercializing novel molecules, neuroscience devices, and technologies to suppress thalamocortical dysrhythmia under the leadership of Professor Rodolfo Llin&aacute;s. Founder Roys Poyiadjis was inducted into the NYU Sir Harold Acton Society.</p>
+                    </div>
+                </div>
+
+                <div class="heritage-card" data-reveal>
+                    <div class="heritage-card-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 28V12l10-8 10 8v16"/><path d="M6 28h20"/><rect x="12" y="18" width="8" height="10"/></svg>
+                    </div>
+                    <div class="heritage-card-body">
+                        <span class="heritage-sector">Energy Infrastructure</span>
+                        <h4>Kashima Biofuel Power Plant <span class="heritage-ticker">Kashima Port, Japan</span></h4>
+                        <p>Largest biofuel power plant in Japan. Joint venture with the family office of Martua Sitorus, CEO of Wilmar International (world's largest palm oil producer). Feed-in tariff valued at $1.5 billion over 20 years, launched after Japan's post-Fukushima shift away from nuclear energy.</p>
+                    </div>
+                </div>
+
+                <div class="heritage-card" data-reveal>
+                    <div class="heritage-card-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 24h24M8 24V14h4v10M14 24V10h4v14M20 24V6h4v18"/></svg>
+                    </div>
+                    <div class="heritage-card-body">
+                        <span class="heritage-sector">Software &amp; Behavioral Analytics</span>
+                        <h4>Cataphora Inc. <span class="heritage-ticker">Patented Technology</span></h4>
+                        <p>Patented software that models human behavior and interactions within massive data volumes. Platinum took a controlling stake, restructured operations, and sold the Legal Analytics division to Ernst &amp; Young's Fraud Investigation &amp; Dispute Services (FIDS).</p>
+                    </div>
+                </div>
+
+                <div class="heritage-card" data-reveal>
+                    <div class="heritage-card-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20c0 0 4-8 12-8s12 8 12 8"/><path d="M4 20c0 0 4 8 12 8s12-8 12-8"/><circle cx="16" cy="20" r="4"/></svg>
+                    </div>
+                    <div class="heritage-card-body">
+                        <span class="heritage-sector">Energy Infrastructure</span>
+                        <h4>Puerto Rico Natural Gas Pipeline <span class="heritage-ticker">Decentricity LLC</span></h4>
+                        <p>Exclusive franchise granted by the Puerto Rico government to operate a natural gas pipeline connecting all major PREPA power plants. Project capital costs expected at $600M with projected annual fuel savings of $400M by switching from diesel to natural gas.</p>
+                    </div>
+                </div>
+
+                <div class="heritage-card" data-reveal>
+                    <div class="heritage-card-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 4l12 8v12l-12 8-12-8V12z"/><path d="M16 4v24M4 12l12 8 12-8"/></svg>
+                    </div>
+                    <div class="heritage-card-body">
+                        <span class="heritage-sector">LNG &amp; Energy</span>
+                        <h4>Cyprus LNG Terminal <span class="heritage-ticker">$2.2B Capital Project</span></h4>
+                        <p>Formed a consortium with LNG Ltd (Australia) and SK E&amp;C (Korea) to develop a 4 million ton LNG import terminal on Cyprus. Gas procurement from Cyprus' Block 12 field (5 Tcf reserves) owned by the Republic of Cyprus and Noble Energy.</p>
+                    </div>
+                </div>
+
+                <div class="heritage-card" data-reveal>
+                    <div class="heritage-card-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 28h24"/><path d="M8 28V16l4-4h8l4 4v12"/><rect x="13" y="20" width="6" height="8"/><path d="M6 10l10-6 10 6"/></svg>
+                    </div>
+                    <div class="heritage-card-body">
+                        <span class="heritage-sector">Maritime &amp; Shipping</span>
+                        <h4>Westport Tankers SA <span class="heritage-ticker">Oil Tanker Fleet</span></h4>
+                        <p>Majority stake in a company owning and managing Aframax oil tankers. Operations spanning technical and commercial management with offices in the US and Greece, trading vessels on the spot charter market.</p>
+                    </div>
+                </div>
+
+                <div class="heritage-card" data-reveal>
+                    <div class="heritage-card-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="10" width="24" height="18" rx="2"/><path d="M4 18h24"/><path d="M10 4v6M22 4v6M16 18v10"/></svg>
+                    </div>
+                    <div class="heritage-card-body">
+                        <span class="heritage-sector">Real Estate &amp; Mixed-Use Development</span>
+                        <h4>The Rhodes Marina <span class="heritage-ticker">&euro;600M GDV, Greece</span></h4>
+                        <p>Largest mixed-use waterfront development in Greece. Master plan by Benoy, permitted for 90,000 m&sup2; with 572+ marina berths, commercial space, and super yacht accommodations. Over &euro;60M already invested in construction and infrastructure.</p>
+                    </div>
+                </div>
+
+                <div class="heritage-card" data-reveal>
+                    <div class="heritage-card-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 28h24"/><rect x="8" y="4" width="16" height="24" rx="1"/><path d="M12 8h8M12 12h8M12 16h8M12 20h4"/></svg>
+                    </div>
+                    <div class="heritage-card-body">
+                        <span class="heritage-sector">Real Estate &amp; Historic Redevelopment</span>
+                        <h4>Cincinnati Terrace Plaza <span class="heritage-ticker">600,000 sq ft Mixed-Use</span></h4>
+                        <p>Iconic 24-story Modernist building designed by Skidmore, Owings &amp; Merrill (1948). Acquired at foreclosure auction. Under redevelopment with a $75M public-private partnership including 162 luxury residential units, a 262-room hotel reflag, and retail renovation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="heritage-bridge" data-reveal>
+                <div class="heritage-bridge-line"></div>
+                <p>This proven foundation of cross-sector investing, global partnerships, and hands-on value creation is what powers Platinum Venture Labs as it enters the next frontier.</p>
+                <div class="heritage-bridge-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Focus Areas Section -->
+    <section class="section focus" id="focus">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">// FOCUS AREAS</span>
+                <h2 class="section-title">Where We <span class="text-gradient">Invest</span></h2>
+                <p class="section-subtitle">We concentrate our resources in three frontier domains where deep technology meets transformative market opportunity.</p>
+            </div>
+            <div class="focus-grid">
+                <div class="focus-card" data-reveal data-tilt>
+                    <div class="focus-card-bg">
+                        <canvas class="focus-canvas" data-pattern="neural"></canvas>
+                    </div>
+                    <div class="focus-card-content">
+                        <div class="focus-number">01</div>
+                        <h3>Artificial Intelligence &<br>Neuromorphic Computing</h3>
+                        <p>From intelligent systems that learn and adapt, to brain-inspired computing architectures that redefine processing efficiency. We back the foundational technologies powering the next era of machine cognition.</p>
+                        <ul class="focus-tags">
+                            <li>Deep Learning</li>
+                            <li>Neuromorphic Chips</li>
+                            <li>Intelligent Systems</li>
+                            <li>Edge AI</li>
+                        </ul>
+                    </div>
+                    <div class="focus-card-glow"></div>
+                </div>
+                <div class="focus-card" data-reveal data-tilt>
+                    <div class="focus-card-bg">
+                        <canvas class="focus-canvas" data-pattern="grid"></canvas>
+                    </div>
+                    <div class="focus-card-content">
+                        <div class="focus-number">02</div>
+                        <h3>Infrastructure, Energy &<br>Autonomous Systems</h3>
+                        <p>Pioneering the infrastructure backbone of tomorrow&mdash;from advanced energy systems and smart grids to fully autonomous vehicles and robotic platforms that operate without human intervention.</p>
+                        <ul class="focus-tags">
+                            <li>Clean Energy</li>
+                            <li>Smart Grid</li>
+                            <li>Autonomous Vehicles</li>
+                            <li>Robotics</li>
+                        </ul>
+                    </div>
+                    <div class="focus-card-glow"></div>
+                </div>
+                <div class="focus-card" data-reveal data-tilt>
+                    <div class="focus-card-bg">
+                        <canvas class="focus-canvas" data-pattern="matrix"></canvas>
+                    </div>
+                    <div class="focus-card-content">
+                        <div class="focus-number">03</div>
+                        <h3>Cybersecurity &<br>Security Technologies</h3>
+                        <p>Investing in the shields of the digital age&mdash;zero-trust architectures, AI-driven threat detection, quantum-resistant cryptography, and next-gen surveillance and defense platforms.</p>
+                        <ul class="focus-tags">
+                            <li>Zero Trust</li>
+                            <li>Threat Intelligence</li>
+                            <li>Quantum Crypto</li>
+                            <li>Defense Tech</li>
+                        </ul>
+                    </div>
+                    <div class="focus-card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-reveal>
+                    <span class="stat-number" data-count="65">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Investment Transactions</span>
+                    <span class="stat-detail">Across technology, energy, real estate &amp; private equity</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item" data-reveal>
+                    <span class="stat-number" data-count="20">0</span>
+                    <span class="stat-suffix">yrs</span>
+                    <span class="stat-label">Track Record</span>
+                    <span class="stat-detail">Established 2005, Poyiadjis Family Trust</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item" data-reveal>
+                    <span class="stat-prefix">$</span>
+                    <span class="stat-number" data-count="2" data-decimals="2">0</span>
+                    <span class="stat-suffix">B+</span>
+                    <span class="stat-label">Project Value Deployed</span>
+                    <span class="stat-detail">Including $1.5B Kashima tariff &amp; $2.2B Cyprus LNG</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item" data-reveal>
+                    <span class="stat-number" data-count="7">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Countries</span>
+                    <span class="stat-detail">US, Japan, Greece, Cyprus, Puerto Rico, Korea &amp; more</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notable Partnerships & Recognition -->
+    <section class="section mentions" id="mentions">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">// NOTABLE PARTNERSHIPS &amp; RECOGNITION</span>
+                <h2 class="section-title">The Company <span class="text-gradient">We Keep</span></h2>
+                <p class="section-subtitle">Our track record includes partnerships with some of the most recognized names in venture capital, academia, engineering, and global industry.</p>
+            </div>
+            <div class="mentions-grid">
+                <div class="mention-card" data-reveal>
+                    <div class="mention-badge">Venture Capital</div>
+                    <h4>Founders Fund</h4>
+                    <p>Peter Thiel's $3 billion fund acquired Platinum's stake in Nucleus Scientific (now Indigo Technologies), validating Platinum's early-stage thesis on energy storage for transportation.</p>
+                </div>
+                <div class="mention-card" data-reveal>
+                    <div class="mention-badge">Academia</div>
+                    <h4>MIT &mdash; Prof. Ian Hunter</h4>
+                    <p>Platinum and MIT Professor Ian Hunter co-founded Nucleus Scientific in 2007. Together they assembled prominent venture capital investors and technology investment bankers to co-invest in the deep-tech energy startup.</p>
+                </div>
+                <div class="mention-card" data-reveal>
+                    <div class="mention-badge">Academia</div>
+                    <h4>NYU &mdash; Prof. Rodolfo Llin&aacute;s</h4>
+                    <p>Multi-year collaboration with NYU's Department of Neuroscience &amp; Physiology and Technology Transfer Office, spinning off patents into startups under the leadership of world-renowned neuroscientist Prof. Llin&aacute;s.</p>
+                </div>
+                <div class="mention-card" data-reveal>
+                    <div class="mention-badge">Recognition</div>
+                    <h4>NYU Sir Harold Acton Society</h4>
+                    <p>Founder Roys Poyiadjis was inducted into the Sir Harold Acton Society at New York University in recognition of Platinum's financial contributions to neuroscience research and commercialization efforts.</p>
+                </div>
+                <div class="mention-card" data-reveal>
+                    <div class="mention-badge">Public Markets</div>
+                    <h4>NASDAQ &mdash; Airship AI IPO</h4>
+                    <p>Platinum structured bridge financing as a senior secured convertible debenture with warrants, contributing to Airship AI's liquidity during its go-public process. Airship listed on NASDAQ (AISP) in December 2023.</p>
+                </div>
+                <div class="mention-card" data-reveal>
+                    <div class="mention-badge">Professional Services</div>
+                    <h4>Ernst &amp; Young LLP</h4>
+                    <p>EY's Fraud Investigation &amp; Dispute Services (FIDS) acquired Cataphora Legal, validating the behavioral analytics technology Platinum restructured and prepared for market.</p>
+                </div>
+                <div class="mention-card" data-reveal>
+                    <div class="mention-badge">Global Industry</div>
+                    <h4>Wilmar International</h4>
+                    <p>Joint venture with the family office of Martua Sitorus, CEO of Wilmar International&mdash;the world's largest palm oil producer (revenue ~$65B)&mdash;for the Kashima biofuel power plant in Japan.</p>
+                </div>
+                <div class="mention-card" data-reveal>
+                    <div class="mention-badge">Engineering &amp; Construction</div>
+                    <h4>SK E&amp;C &amp; LNG Ltd</h4>
+                    <p>Formed a consortium with LNG Ltd (Australia) and SK Engineering &amp; Construction (Korea) to develop the $2.2 billion Cyprus LNG terminal&mdash;one of the largest proposed energy projects in the Eastern Mediterranean.</p>
+                </div>
+                <div class="mention-card" data-reveal>
+                    <div class="mention-badge">Architecture</div>
+                    <h4>Benoy &amp; Skidmore, Owings &amp; Merrill</h4>
+                    <p>Rhodes Marina master plan created with Benoy, one of the world's leading architecture firms. Cincinnati Terrace Plaza originally designed by SOM&mdash;the same firm behind the Burj Khalifa and One World Trade Center.</p>
+                </div>
+                <div class="mention-card" data-reveal>
+                    <div class="mention-badge">Legal Counsel</div>
+                    <h4>Archer Law &mdash; James G. Smith</h4>
+                    <p>Platinum's US legal counsel, James Smith of Archer Law, provides references on Platinum's activities and principals, reflecting the institutional credibility of the firm's operations and deal structures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">// PORTFOLIO HIGHLIGHTS</span>
+                <h2 class="section-title">Investment <span class="text-gradient">Spotlight</span></h2>
+                <p class="section-subtitle">Key investments from the Platinum Capital Partners ecosystem, spanning AI, energy, infrastructure, real estate, and maritime&mdash;the foundation on which PVL is built.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" data-reveal data-tilt>
+                    <div class="portfolio-card-header">
+                        <span class="portfolio-tag">AI &middot; Surveillance</span>
+                        <span class="portfolio-status status-exited">Exited</span>
+                    </div>
+                    <h3>Airship AI Holdings</h3>
+                    <p class="portfolio-ticker">NASDAQ: AISP</p>
+                    <p>AI-driven video, sensor, and data management surveillance platform providing predictive analysis for public safety. Platinum provided bridge financing structured as a senior secured convertible debenture with warrants, converted to equity post-IPO.</p>
+                    <div class="portfolio-meta">
+                        <span>Bridge Financing &rarr; NASDAQ IPO</span>
+                        <span>2023 &ndash; 2024</span>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-reveal data-tilt>
+                    <div class="portfolio-card-header">
+                        <span class="portfolio-tag">Energy &middot; Deep Tech</span>
+                        <span class="portfolio-status status-exited">Exited</span>
+                    </div>
+                    <h3>Nucleus Scientific / Indigo Technologies</h3>
+                    <p class="portfolio-ticker">Co-founded with MIT Prof. Ian Hunter</p>
+                    <p>Energy storage startup developing methods to more efficiently store and transfer energy for transportation. Platinum was a founding member, assembled prominent VC co-investors. Stake acquired by Peter Thiel's $3B Founders Fund and Mark Heising.</p>
+                    <div class="portfolio-meta">
+                        <span>Acquired by Founders Fund</span>
+                        <span>2007 &ndash; 2015</span>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-reveal data-tilt>
+                    <div class="portfolio-card-header">
+                        <span class="portfolio-tag">Neuroscience &middot; MedTech</span>
+                        <span class="portfolio-status status-active">Research</span>
+                    </div>
+                    <h3>NYU Neuroscience Ventures</h3>
+                    <p class="portfolio-ticker">NYU Dept. of Neuroscience &amp; Physiology</p>
+                    <p>Spun off NYU patents into startups commercializing novel molecules, neuroscience devices, and technologies to treat thalamocortical dysrhythmia under Prof. Rodolfo Llin&aacute;s. Founder inducted into the NYU Sir Harold Acton Society.</p>
+                    <div class="portfolio-meta">
+                        <span>Multiple Spin-offs &amp; Patents</span>
+                        <span>Multi-year Partnership</span>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-reveal data-tilt>
+                    <div class="portfolio-card-header">
+                        <span class="portfolio-tag">Software &middot; Analytics</span>
+                        <span class="portfolio-status status-exited">Exited</span>
+                    </div>
+                    <h3>Cataphora Inc.</h3>
+                    <p class="portfolio-ticker">Behavioral Analysis Platform</p>
+                    <p>Patented software modeling human behavior and interactions within massive data volumes. Platinum took a controlling stake, restructured the company, paid off debts, and sold the Legal Analytics division to Ernst &amp; Young's Fraud Investigation unit (FIDS).</p>
+                    <div class="portfolio-meta">
+                        <span>Restructured &rarr; Sold to EY FIDS</span>
+                        <span>Control Acquisition</span>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-reveal data-tilt>
+                    <div class="portfolio-card-header">
+                        <span class="portfolio-tag">Energy &middot; Infrastructure</span>
+                        <span class="portfolio-status status-active">Operating</span>
+                    </div>
+                    <h3>Kashima Biofuel Power Plant</h3>
+                    <p class="portfolio-ticker">Kashima Port, Japan</p>
+                    <p>Largest biofuel power plant in Japan. Joint venture with the family office of Martua Sitorus, CEO of Wilmar International. Feed-in tariff valued at $1.5B over 20 years, launched after Japan's post-Fukushima shift from nuclear energy.</p>
+                    <div class="portfolio-meta">
+                        <span>$1.5B Feed-in Tariff</span>
+                        <span>20-Year Contract</span>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-reveal data-tilt>
+                    <div class="portfolio-card-header">
+                        <span class="portfolio-tag">Energy &middot; Infrastructure</span>
+                        <span class="portfolio-status status-active">Development</span>
+                    </div>
+                    <h3>Puerto Rico Gas Pipeline</h3>
+                    <p class="portfolio-ticker">Decentricity LLC (PCP Subsidiary)</p>
+                    <p>Exclusive franchise from the Puerto Rico government to operate a natural gas pipeline connecting all major PREPA power plants (Costa Sur, Aguirre, Palo Seco, San Juan). $600M capital costs with projected $400M annual fuel savings.</p>
+                    <div class="portfolio-meta">
+                        <span>$600M Capital Project</span>
+                        <span>Exclusive Franchise</span>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-reveal data-tilt>
+                    <div class="portfolio-card-header">
+                        <span class="portfolio-tag">LNG &middot; Energy</span>
+                        <span class="portfolio-status status-exited">Concluded</span>
+                    </div>
+                    <h3>Cyprus LNG Terminal</h3>
+                    <p class="portfolio-ticker">$2.2B Capital Project</p>
+                    <p>Consortium with LNG Ltd (Australia) and SK E&amp;C (Korea) to develop a 4 million ton LNG import terminal at Vasilikos, Cyprus. Gas procurement from Cyprus' Block 12 field (5 Tcf reserves) with Noble Energy. $30M development costs.</p>
+                    <div class="portfolio-meta">
+                        <span>$2.2B Project Development</span>
+                        <span>International Consortium</span>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-reveal data-tilt>
+                    <div class="portfolio-card-header">
+                        <span class="portfolio-tag">Maritime &middot; Shipping</span>
+                        <span class="portfolio-status status-exited">Exited</span>
+                    </div>
+                    <h3>Westport Tankers SA</h3>
+                    <p class="portfolio-ticker">Aframax Oil Tanker Fleet</p>
+                    <p>Majority stake in a company owning and managing Aframax oil tankers. Operations spanning technical and commercial management with offices in the US and Greece, ~25 employees, trading vessels on the spot charter market.</p>
+                    <div class="portfolio-meta">
+                        <span>Majority Acquisition</span>
+                        <span>US &amp; Greece Operations</span>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-reveal data-tilt>
+                    <div class="portfolio-card-header">
+                        <span class="portfolio-tag">Real Estate &middot; Mixed-Use</span>
+                        <span class="portfolio-status status-active">Operating</span>
+                    </div>
+                    <h3>The Rhodes Marina</h3>
+                    <p class="portfolio-ticker">&euro;600M GDV, Rhodes, Greece</p>
+                    <p>Largest mixed-use waterfront development in Greece. Master plan by Benoy, permitted for 90,000 m&sup2;. Phase A marina (372 berths) operational since 2016, Phase 2 adding 200 berths. 3,700 m&sup2; commercial space completed. Super yacht capable.</p>
+                    <div class="portfolio-meta">
+                        <span>&euro;60M+ Invested</span>
+                        <span>Acquired 2019</span>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-reveal data-tilt>
+                    <div class="portfolio-card-header">
+                        <span class="portfolio-tag">Real Estate &middot; Historic</span>
+                        <span class="portfolio-status status-active">Redevelopment</span>
+                    </div>
+                    <h3>Cincinnati Terrace Plaza</h3>
+                    <p class="portfolio-ticker">600,000 sq ft Mixed-Use, Downtown Cincinnati</p>
+                    <p>Iconic 24-story Modernist building designed by Skidmore, Owings &amp; Merrill (1948). Acquired at foreclosure. Under redevelopment with $75M public-private partnership: 162 luxury apartments, 262-room hotel reflag, retail and office renovation.</p>
+                    <div class="portfolio-meta">
+                        <span>$75M Public-Private Partnership</span>
+                        <span>Federal &amp; State Tax Credits</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-content" data-reveal>
+                <span class="section-tag">// GET IN TOUCH</span>
+                <h2 class="contact-title">Ready to Build<br>the <span class="text-gradient">Future</span>?</h2>
+                <p class="contact-text">We're looking for exceptional founders building at the frontier of AI, cybersecurity, and autonomous systems. If you have a breakthrough idea, let's talk.</p>
+                <div class="contact-actions">
+                    <a href="mailto:info@platinumcapitalpartners.net" class="btn btn-primary btn-large">
+                        <span>Start a Conversation</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-detail">
+                        <span class="contact-label">Headquarters</span>
+                        <span>1325 Avenue of the Americas, 28th Floor<br>New York, NY 10019</span>
+                    </div>
+                    <div class="contact-detail">
+                        <span class="contact-label">Phone</span>
+                        <span>212 763 8494</span>
+                    </div>
+                    <div class="contact-detail">
+                        <span class="contact-label">Web</span>
+                        <a href="https://www.platinumcapitalpartners.net" target="_blank" rel="noopener">platinumcapitalpartners.net</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">&#9670;</span>
+                    <span>Platinum Venture Labs, Inc.</span>
+                </div>
+                <p class="footer-legal">A subsidiary of Platinum Capital Partners Inc. &copy; 2025. All rights reserved. Confidential.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
