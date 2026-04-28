@@ -200,7 +200,8 @@ body:hover .cursor-glow {
 /* --- Hero Section --- */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 100svh;
+    max-height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,7 +261,7 @@ body:hover .cursor-glow {
     border: 1px solid var(--color-border-hover);
     border-radius: 100px;
     background: var(--color-primary-dim);
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 .badge-dot {
     width: 6px;
@@ -293,7 +294,7 @@ body:hover .cursor-glow {
     font-family: var(--font-mono);
     font-size: clamp(0.85rem, 1.5vw, 1.1rem);
     color: var(--color-text-muted);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.75rem;
     min-height: 1.6em;
     letter-spacing: 0.02em;
 }
@@ -388,7 +389,7 @@ body:hover .cursor-glow {
 
 /* --- Section Common --- */
 .section {
-    padding: 6rem 0;
+    padding: 4.5rem 0;
     position: relative;
 }
 .container {
@@ -397,7 +398,7 @@ body:hover .cursor-glow {
     padding: 0 2rem;
 }
 .section-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .section-tag {
     display: inline-block;
@@ -433,7 +434,7 @@ body:hover .cursor-glow {
 /* --- About Section --- */
 .about-grid {
     display: grid;
-    gap: 3rem;
+    gap: 2rem;
 }
 .about-lead {
     font-size: clamp(1.1rem, 2vw, 1.4rem);
@@ -509,8 +510,8 @@ body:hover .cursor-glow {
 
 /* --- Our Approach --- */
 .approach {
-    margin-top: 4rem;
-    padding-top: 3rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
     border-top: 1px solid var(--color-border);
 }
 .approach-title {
@@ -520,7 +521,7 @@ body:hover .cursor-glow {
     color: var(--color-primary);
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 .approach-steps {
     display: flex;
@@ -592,7 +593,7 @@ body:hover .cursor-glow {
 }
 .heritage-intro {
     max-width: 900px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.75rem;
 }
 .heritage-lead {
     font-size: 1.1rem;
@@ -614,8 +615,8 @@ body:hover .cursor-glow {
 .heritage-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-    margin-bottom: 3.5rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 .heritage-card {
     display: flex;
@@ -803,13 +804,13 @@ body:hover .cursor-glow {
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
     background: var(--color-bg);
-    padding: 5rem 0;
+    padding: 3.5rem 0;
 }
 .stats-grid {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2.5rem;
     flex-wrap: wrap;
 }
 .stat-item {
@@ -1005,7 +1006,7 @@ body:hover .cursor-glow {
 .contact {
     background: var(--color-bg-alt);
     text-align: center;
-    padding: 6rem 0;
+    padding: 4.5rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -1037,11 +1038,11 @@ body:hover .cursor-glow {
     font-size: 1.1rem;
     color: var(--color-text-muted);
     max-width: 550px;
-    margin: 0 auto 2.5rem;
+    margin: 0 auto 1.75rem;
     line-height: 1.7;
 }
 .contact-actions {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 .contact-info {
     display: flex;
