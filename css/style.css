@@ -1058,6 +1058,66 @@ body:hover .cursor-glow {
     line-height: 1.55;
 }
 
+/* --- PVL Focus Areas --- */
+.focus {
+    background: var(--color-bg-alt);
+}
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+.focus-card {
+    background: rgba(10, 10, 25, 0.8);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    transition: all 0.4s var(--ease-out-expo);
+}
+.focus-card:hover {
+    border-color: var(--color-border-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 212, 255, 0.05);
+}
+.focus-card-inner {
+    padding: 2rem 1.75rem;
+}
+.focus-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--color-primary);
+    opacity: 0.7;
+    margin-bottom: 1.25rem;
+}
+.focus-icon svg {
+    width: 100%;
+    height: 100%;
+}
+.focus-card:hover .focus-icon {
+    opacity: 1;
+}
+.focus-card .focus-number {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--color-primary);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+    opacity: 0.5;
+}
+.focus-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-bright);
+    margin-bottom: 0.75rem;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+}
+.focus-card p {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
 /* --- Contact Section --- */
 .contact {
     background: var(--color-bg-alt);
