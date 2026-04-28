@@ -654,7 +654,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typewriterEl) {
         new Typewriter(typewriterEl, [
             'Incubating breakthrough ventures in AI & deep tech.',
-            'Backing the next generation of founders.',
+            'Backing the next generation of ideas.',
             'From neuromorphic computing to autonomous systems.',
             'Where frontier technology meets venture capital.',
         ], { typeSpeed: 35, deleteSpeed: 20, pauseTime: 3000 });
