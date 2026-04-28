@@ -605,6 +605,12 @@ body:hover .cursor-glow {
     color: var(--color-text-bright);
     font-weight: 600;
 }
+.heritage-body {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.85;
+    margin-bottom: 1.5rem;
+}
 .heritage-sub {
     font-size: 0.95rem;
     color: var(--color-text-muted);
