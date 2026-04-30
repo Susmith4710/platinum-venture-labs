@@ -449,10 +449,10 @@ body:hover .cursor-glow {
     gap: 3rem;
 }
 .about-lead {
-    font-size: clamp(1.6rem, 2.8vw, 2rem);
+    font-size: clamp(1rem, 1.65vw, 1.275rem);
     color: var(--color-text-bright);
     font-weight: 400;
-    line-height: 1.55;
+    line-height: 1.6;
     max-width: 1100px;
     border-left: 3px solid var(--color-primary);
     padding-left: 1.75rem;
