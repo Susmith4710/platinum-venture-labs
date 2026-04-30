@@ -505,22 +505,22 @@ body:hover .cursor-glow {
     height: 100%;
 }
 .about-card h3 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--color-text-bright);
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.05rem;
     letter-spacing: -0.02em;
     line-height: 1.2;
 }
 .about-card p {
-    font-size: 1.35rem;
+    font-size: 1rem;
     color: #ffffff;
     line-height: 1.6;
     opacity: 1;
     font-weight: 400;
 }
 .about-secondary {
-    font-size: 1.45rem;
+    font-size: 1.1rem;
     color: var(--color-text-bright);
     line-height: 1.65;
     margin-top: 1.5rem;
@@ -563,22 +563,22 @@ body:hover .cursor-glow {
 }
 .approach-num {
     font-family: var(--font-mono);
-    font-size: 1.1rem;
+    font-size: 0.825rem;
     color: var(--color-primary);
     opacity: 1;
     letter-spacing: 0.12em;
     font-weight: 600;
 }
 .approach-step h4 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--color-text-bright);
-    margin: 1rem 0 1.1rem;
+    margin: 0.75rem 0 0.85rem;
     letter-spacing: -0.02em;
     line-height: 1.2;
 }
 .approach-step p {
-    font-size: 1.35rem;
+    font-size: 1rem;
     color: #ffffff;
     line-height: 1.6;
     opacity: 1;
@@ -1615,7 +1615,7 @@ section, footer, nav {
     -webkit-text-fill-color: transparent;
     opacity: 0.85;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.65rem;
 }
 
 /* Card icons — subtle glow on hover */
